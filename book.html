@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Memory Book ❤️</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<div class="hearts">
+    <span>❤️</span>
+    <span>💖</span>
+    <span>💕</span>
+    <span>💗</span>
+    <span>💞</span>
+    <span>❤️</span>
+    <span>💖</span>
+    <span>💕</span>
+    <span>💋</span>
+    <span>😘</span>
+    <span>🔒</span>
+    <span>🔑</span>
+    <span>🌹</span>
+    <span>💌</span>
+</div>
+
+<body>
+
+<div class="book">
+
+<div class="page active">
+<h2>📸 Our Beautiful Memory</h2>
+
+<img src="photo1.jpg">
+
+<p>Every picture tells a beautiful story ❤️</p>
+</div>
+
+<div class="page">
+<h2>🌸 Precious Moment</h2>
+
+<img src="photo2.jpg">
+
+<p>Some memories never fade ✨</p>
+</div>
+
+<div class="page">
+<h2>💖 Forever Special</h2>
+
+<img src="photo3.jpg">
+
+<p>The moments I always cherish 🥹❤️</p>
+</div>
+
+<div class="page">
+<h2>🫂 Unforgettable Day</h2>
+
+<img src="photo4.jpg">
+
+<p>The smiles I never want to forget ❤️</p>
+</div>
+
+<div class="page">
+<h2>🌷 Beautiful Memory</h2>
+
+<img src="photo5.jpg">
+
+<p>Every memory has a special place 💖</p>
+</div>
+
+<div class="page">
+<h2>✨ Favourite Picture</h2>
+
+<img src="photo6.jpg">
+
+<p>Some moments stay forever ✨</p>
+</div>
+
+<div class="page">
+<h2>💕 Special Bond</h2>
+
+<img src="photo7.jpg">
+
+<p>Time changes, memories stay ❤️</p>
+</div>
+
+<div class="page">
+<h2>🌸 Sweet Memory</h2>
+
+<img src="photo8.jpg">
+
+<p>A memory worth keeping forever 🥹</p>
+</div>
+
+<div class="page">
+<h2>💌 My Favourite</h2>
+
+<img src="photo9.jpg">
+
+<p>The moments that make me smile ❤️</p>
+</div>
+
+<div class="page">
+<h2>🌍 Forever Memory</h2>
+
+<img src="photo10.jpg">
+
+<p>Some people become unforgettable 💖</p>
+</div>
+
+<div class="page">
+
+<h2>💌 A Letter For You 💌</h2>
+
+<div class="letter">
+
+<p>
+
+Hi maa... 🥹❤️
+
+<br><br>
+
+Ela unnava? Ninnu chala chala miss avtunna ra... 💔🫂 Nuvvu ekkada unna sare happy ga undali, navvuthu undali ani nenu eppudu korukuntanu 😊🌸.
+
+<br><br>
+
+Nijam cheppali ante, na life lo chala mandi vacharu, vellipoyaru... kani nuvvu matram eppatiki special eh 💖. 7th class nunchi mana friendship start ayindi, appati nunchi ippati varaku nuvvu na heart lo oka special place lo unnava 🥹✨.
+
+<br><br>
+
+Nuvvu naatho unnappudu naku teliyakunda happy ga untanu 😭❤️. Nuvvu oka message pettina, oka call chesina, leda simple ga matladina kuda na day motham better aipothundi 🌍💕.
+
+<br><br>
+
+Konni sarlu nuvvu dooramga unnattu anipistundi, appudu naku chala badha ga untundi 😔💔. Endukante nuvvu friend matrame kaadhu, na best memories, na happiness, na comfort place kuda 💞🫂.
+
+<br><br>
+
+Nenu ninnu eppatiki marchiponu maa 🤞❤️. Enni years aina, enni changes vachina, mana friendship ni eppudu vadulukonu. Na life lo nuvve na first and last bestie 👭❤️♾️.
+
+<br><br>
+
+I really miss you so much maa... 🥹💗
+
+Nuvvu happy ga unte chalu, adhe na happiness 🌸🤍.
+
+<br><br>
+
+Love you forever, bestie 🫂💖✨
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<div style="text-align:center;margin-top:15px;">
+<button onclick="prevPage()">⬅ Previous</button>
+<button onclick="nextPage()">Next ➡</button>
+</div>
+
+<script>
+
+let pages = document.querySelectorAll(".page");
+let current = 0;
+
+function showPage(){
+    pages.forEach(page=>{
+        page.classList.remove("active");
+    });
+
+    pages[current].classList.add("active");
+}
+
+function nextPage(){
+    if(current < pages.length-1){
+        current++;
+        showPage();
+    }
+}
+
+function prevPage(){
+    if(current > 0){
+        current--;
+        showPage();
+    }
+}
+
+showPage();
+
+</script>
+
+</body>
+</html>
