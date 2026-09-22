@@ -1,10 +1,281 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Memories For You</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Something Special ❤️</title>
+
+<style>
+
+body{
+margin:0;
+padding:0;
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+font-family:'Segoe UI',sans-serif;
+background:linear-gradient(135deg,#ffd6e7,#fff0f5);
+overflow:hidden;
+}
+
+/* Floating Symbols */
+.hearts{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+overflow:hidden;
+pointer-events:none;
+z-index:1;
+}
+
+.hearts span{
+position:absolute;
+bottom:-100px;
+font-size:40px;
+animation:heartFloat 5s linear infinite;
+}
+
+.hearts span:nth-child(1){left:5%;animation-delay:0s;}
+.hearts span:nth-child(2){left:12%;animation-delay:1s;}
+.hearts span:nth-child(3){left:20%;animation-delay:2s;}
+.hearts span:nth-child(4){left:28%;animation-delay:0.5s;}
+.hearts span:nth-child(5){left:36%;animation-delay:3s;}
+.hearts span:nth-child(6){left:44%;animation-delay:1.5s;}
+.hearts span:nth-child(7){left:52%;animation-delay:2.5s;}
+.hearts span:nth-child(8){left:60%;animation-delay:0.8s;}
+.hearts span:nth-child(9){left:68%;animation-delay:3.5s;}
+.hearts span:nth-child(10){left:76%;animation-delay:1.2s;}
+.hearts span:nth-child(11){left:84%;animation-delay:2.2s;}
+.hearts span:nth-child(12){left:92%;animation-delay:0.3s;}
+.hearts span:nth-child(13){left:15%;animation-delay:4s;}
+.hearts span:nth-child(14){left:50%;animation-delay:4.5s;}
+.hearts span:nth-child(15){left:80%;animation-delay:5s;}
+
+@keyframes heartFloat{
+0%{
+transform:translateY(0);
+opacity:0;
+}
+20%{
+opacity:1;
+}
+100%{
+transform:translateY(-120vh) rotate(360deg);
+opacity:0;
+}
+}
+
+.login-box{
+background:white;
+padding:40px;
+border-radius:25px;
+box-shadow:0 0 25px rgba(0,0,0,0.2);
+text-align:center;
+width:350px;
+animation:fadeIn 1s ease;
+position:relative;
+z-index:10;
+}
+
+h1{
+color:#ff4f8b;
+}
+
+input{
+width:90%;
+padding:12px;
+margin:10px 0;
+border:1px solid #ddd;
+border-radius:12px;
+font-size:16px;
+}
+
+button{
+padding:12px 25px;
+background:#ff4f8b;
+color:white;
+border:none;
+border-radius:15px;
+cursor:pointer;
+font-size:16px;
+transition:0.3s;
+}
+
+button:hover{
+background:#ff2d75;
+transform:scale(1.05);
+}
+
+#msg{
+margin-top:10px;
+color:red;
+font-weight:bold;
+}
+
+@keyframes fadeIn{
+from{
+opacity:0;
+transform:translateY(30px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+</style>
 </head>
+
 <body>
-    <h1>Welcome to Memories For You ❤️</h1>
-    <p>This is my first website.</p>
+
+<div class="hearts">
+<span>❤️</span>
+<span>💖</span>
+<span>💕</span>
+<span>💋</span>
+<span>😘</span>
+<span>🔒</span>
+<span>🔑</span>
+<span>🌹</span>
+<span>💌</span>
+<span>💞</span>
+<span>💗</span>
+<span>🎀</span>
+<span>✨</span>
+<span>🦋</span>
+<span>🌸</span>
+</div>
+
+<div class="login-box">
+
+<h1>💖 My Girl Login Here 💖</h1>
+
+<p>Enter the details ❤️</p>
+
+<input
+type="text"
+id="username"
+placeholder="Enter Your Name">
+
+<input
+type="password"
+id="password"
+placeholder="Enter Secret Code">
+
+<br><br>
+
+<button onclick="login()">Login ❤️</button>
+
+<p id="msg"></p>
+
+</div>
+
+<script>
+
+function login(){
+
+let user=document.getElementById("username").value;
+let pass=document.getElementById("password").value;
+
+if(user==="madhu" && pass==="1319"){
+
+document.body.innerHTML=`
+<div class="hearts">
+<span>❤️</span>
+<span>💖</span>
+<span>💕</span>
+<span>💋</span>
+<span>😘</span>
+<span>🔒</span>
+<span>🔑</span>
+<span>🌹</span>
+<span>💌</span>
+<span>💞</span>
+<span>💗</span>
+<span>🎀</span>
+<span>✨</span>
+<span>🦋</span>
+<span>🌸</span>
+</div>
+<div style="
+height:100vh;
+width:100%;
+display:flex;
+justify-content:center;
+align-items:center;
+background:linear-gradient(135deg,#ffd6e7,#fff0f5);
+">
+
+<div style="
+background:white;
+padding:50px;
+border-radius:25px;
+text-align:center;
+box-shadow:0 0 25px rgba(0,0,0,0.2);
+max-width:650px;
+">
+
+<h1 style="color:#ff4f8b;">
+🌸 A Little Surprise Is Waiting For You 🌸
+</h1>
+
+<p style="
+font-size:22px;
+line-height:1.8;
+color:#444;
+">
+
+Every page holds a memory ❤️
+
+<br><br>
+
+Every memory holds a feeling ✨
+
+<br><br>
+
+And every feeling reminds me of you 🥹💖
+
+<br><br>
+
+A small surprise made specially for you 🌸💌
+
+</p>
+
+<button
+onclick="window.location.href='book.html'"
+style="
+padding:15px 30px;
+background:#ff4f8b;
+color:white;
+border:none;
+border-radius:20px;
+cursor:pointer;
+font-size:18px;
+">
+
+💌 Open Memories 💌
+
+</button>
+
+</div>
+
+</div>
+
+`;
+
+}else{
+
+document.getElementById("msg").innerHTML=
+"❌ Wrong Username or Password";
+
+}
+
+}
+
+</script>
+
 </body>
 </html>
