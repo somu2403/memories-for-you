@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Memories For You</title>
+</head>
+<body>
+    <h1>Welcome to Memories For You ❤️</h1>
+    <p>This is my first website.</p>
+</body>
+</html>
